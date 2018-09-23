@@ -18,8 +18,8 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #EEE;
-  overflow: hidden;
-  font-family: 'Changa', sans-serif; }
+  font-family: 'Changa', sans-serif;
+  direction: rtl }
 
 ul, ol {
   list-style: none;
