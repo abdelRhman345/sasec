@@ -18,8 +18,8 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #EEE;
-  font-family: 'Changa', sans-serif;
-  direction: rtl }
+  direction: rtl;
+  font-family: 'Changa', sans-serif; }
 
 ul, ol {
   list-style: none;
@@ -165,20 +165,16 @@ h6 {
 /* The Global Title To All Sections */
 .title {
   background-color: #e31837;
-  width: auto;
-  position: absolute;
-  top: 25px;
-  right: 0;
+  width: 300px;
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 1px;
-  padding: 0 10px; }
+  border-radius: 1px; }
   .title h2 {
     font-size: 18px;
     font-weight: 700;
     color: #f1f1f1;
-    padding: 8px 15px; }
+    padding: 10px 15px; }
     @media (max-width: 575.98px) {
       .title h2 {
         font-size: 16px; } }
@@ -426,10 +422,10 @@ h6 {
         position: relative; }
         @media (max-width: 575.98px) {
           .box-gallary .card .card-body .card-title {
-            font-size: 13px !important; } }
+            font-size: 11px !important; } }
         @media (min-width: 576px) and (max-width: 767.98px) {
           .box-gallary .card .card-body .card-title {
-            font-size: 13px !important; } }
+            font-size: 11px !important; } }
         @media (min-width: 768px) and (max-width: 991.98px) {
           .box-gallary .card .card-body .card-title {
             font-size: 13px !important; } }
@@ -442,6 +438,15 @@ h6 {
           line-height: 40px;
           padding: 0 15px;
           font-size: 13px; }
+          @media (max-width: 575.98px) {
+            .box-gallary .card .card-body .card-title span {
+              line-height: 35px; } }
+          @media (min-width: 576px) and (max-width: 767.98px) {
+            .box-gallary .card .card-body .card-title span {
+              line-height: 35px; } }
+          @media (min-width: 768px) and (max-width: 991.98px) {
+            .box-gallary .card .card-body .card-title span {
+              line-height: 35px; } }
       .box-gallary .card .card-body .card-text {
         font-size: 13px;
         line-height: 21px; }
@@ -750,9 +755,11 @@ h6 {
         width: 70px;
         height: 35px;
         border-radius: 3px;
-        text-indent: 0; }
+        text-indent: 0;
+        width: auto; }
         .carousel-overlay .carousel .carousel-indicators li h6 {
           color: #232323;
+          padding: 0 10px;
           background-color: rgba(241, 241, 241, 0.5);
           width: 100%;
           height: 100%;
@@ -763,7 +770,7 @@ h6 {
       height: 100%;
       width: 100%;
       z-index: 99;
-      padding-top: 15%; }
+      padding-top: 0; }
       .carousel-overlay .carousel .carousel-inner .carousel-item .carousel-caption {
         width: 50%;
         text-align: right;
@@ -772,7 +779,8 @@ h6 {
         right: 0;
         bottom: 0;
         transform: translate(-20%, -50%);
-        z-index: 99; }
+        z-index: 99;
+        margin-top: 10%; }
         @media (max-width: 575.98px) {
           .carousel-overlay .carousel .carousel-inner .carousel-item .carousel-caption {
             width: 80%;
@@ -890,13 +898,13 @@ h6 {
     .our-apps .apps-content .apps-text .spec-app i {
       float: right;
       width: 10%;
-      margin: 10px -10px;
+      margin: 2% 2%;
       font-size: 25px;
       font-weight: 300;
       color: #e31837; }
     .our-apps .apps-content .apps-text .spec-app p {
-      float: left;
-      width: 90%;
+      float: right;
+      width: 85%;
       font-size: 14px;
       line-height: 25px; }
     .our-apps .apps-content .apps-text .spec-app img {
@@ -939,7 +947,7 @@ h6 {
 .paintings .pain-content .pain-text i {
   float: right;
   width: 5%;
-  margin-top: 8px;
+  margin-top: 7px;
   margin-left: 1%;
   color: #e31837; }
   @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1001,7 +1009,7 @@ h6 {
   .std-media .std-media-content .std-media-text i {
     float: right;
     width: 5%;
-    margin-top: 8px;
+    margin-top: 7px;
     margin-left: 1%;
     color: #e31837; }
     @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1097,6 +1105,15 @@ h6 {
         margin: 0 20px;
         font-size: 20px;
         border-radius: 3px; }
+        @media (max-width: 575.98px) {
+          .contact-us .navbar-nav .nav-item .nav-link {
+            margin: 0; } }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+          .contact-us .navbar-nav .nav-item .nav-link {
+            margin: 0; } }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          .contact-us .navbar-nav .nav-item .nav-link {
+            margin: 0 10px; } }
         .contact-us .navbar-nav .nav-item .nav-link:hover {
           background-color: #232323; }
         .contact-us .navbar-nav .nav-item .nav-link:hover:after {

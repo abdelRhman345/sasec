@@ -1,0 +1,81 @@
+body {
+  direction: ltr !important;
+  font-family: 'Tajawal', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Tajawal', sans-serif; }
+
+/* Upper Bar En */
+.upper-bar .navbar-nav .nav-item {
+  width: 120px !important;
+  text-align: center;
+  transition: .3s; }
+  .upper-bar .navbar-nav .nav-item:hover {
+    padding-right: 5px !important; }
+  .upper-bar .navbar-nav .nav-item .nav-link:hover {
+    padding-right: 5px !important; }
+.upper-bar .icon-search .icon {
+  padding: 0 5px; }
+  .upper-bar .icon-search .icon i {
+    margin: 0 3px; }
+.upper-bar .name-search {
+  left: -15px; }
+  .upper-bar .name-search .button-search {
+    text-align: left; }
+    .upper-bar .name-search .button-search:hover {
+      padding-left: 10px; }
+
+/* Navigatio Bar */
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 14px; }
+.navbar .navbar-brand {
+  position: absolute;
+  top: 0px;
+  left: 5%; }
+
+/* Carousel */
+.carousel-overlay .carousel .carousel-inner .carousel-item .carousel-caption {
+  text-align: left !important;
+  left: 10% !important;
+  transform: translate(0, 0); }
+
+/* Our App */
+.our-apps .apps-content .apps-text .spec-app i {
+  float: left; }
+.our-apps .apps-content .apps-text .spec-app p {
+  float: left; }
+
+/* The Global Styles */
+/* The Media */
+.std-media .std-media-content .std-media-text i {
+  float: left;
+  width: 8%; }
+.std-media .std-media-content .std-media-text span {
+  float: left;
+  width: 85%; }
+
+/* The Paintings */
+.paintings .pain-content .pain-text i {
+  float: left;
+  width: 8%; }
+.paintings .pain-content .pain-text span {
+  float: left;
+  width: 85%; }
+
+/* The Global Text To All Sections */
+.text i {
+  float: left; }
+.text span {
+  float: left; }
+
+.box-gallary .card .card-body .card-title span {
+  right: 0;
+  left: auto; }
+
+/*# sourceMappingURL=styles-en.css.map */
