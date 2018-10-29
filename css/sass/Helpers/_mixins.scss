@@ -1,0 +1,27 @@
+/*
+** Prefixes Mixin
+** Auto Add Prefixes To Properties
+*/
+@mixin prefixer($property, $value, $prefixes) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+
+/*
+** Animation Mixin
+** Auto Add Prefixes To Animation
+*/
+@mixin keyFrame($animeName) {
+    @-webkit-keyframes #{$animeName} {
+      @content;
+    }
+    @-moz-keyframes #{$animeName} {
+      @content;
+    }
+    @keyframes #{$animeName} {
+      @content;
+    }
+}

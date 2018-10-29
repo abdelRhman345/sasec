@@ -1,0 +1,226 @@
+/* Our App */
+.our-apps {
+    .apps-content {
+        margin-top: 40px;
+        @media #{$mediaExSmall} {
+            margin-top: 60px;
+        }
+        @media #{$mediaSmall} {
+            margin-top: 60px;
+        }
+        @media #{$mediaMedium} {
+            margin-top: 60px;
+        }
+        .apps-text {
+            h5 {
+                font-size: 30px;
+                font-weight: 600;
+                @media #{$mediaExSmall} {
+                    font-size: 20px
+                }
+                @media #{$mediaSmall} {
+                    font-size: 21px
+                }
+                @media #{$mediaMedium} {
+                    font-size: 23px
+                }
+            }
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 30px;
+                text-shadow: 0 0 1px rgba(black, .28);
+                @media #{$mediaExSmall} {
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+                @media #{$mediaSmall} {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                @media #{$mediaMedium} {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+            .spec-app {
+                margin-top: 40px;
+                i {
+                    float: right;
+                    width: 10%;
+                    margin: 2% 2%;
+                    font-size: 25px;
+                    font-weight: 300;
+                    color: $mainColor
+                }
+                p {
+                    float: right;
+                    width: 85%;
+                    font-size: 14px;
+                    line-height: 25px
+                }
+                img {
+                    width: 200px !important;
+                    height: 60px;
+                    border-radius: 5px;
+                    @media #{$mediaExSmall} {
+                        margin-bottom: 20px
+                    }
+                    @media #{$mediaSmall} {
+                        margin-bottom: 20px
+                    }
+                    @media #{$mediaMedium} {
+                        margin-bottom: 20px
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* The Paintings */
+.paintings {
+    .pain-content {
+        .pain-header {
+            p {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                font-size: 15px;
+                line-height: 25px;
+                @media #{$mediaExSmall} {
+                    margin-top: 60px;
+                }
+                @media #{$mediaSmall} {
+                    margin-top: 60px;
+                }
+                @media #{$mediaMedium} {
+                    margin-top: 60px;
+                }
+            }
+        }
+        .pain-text {
+            h5 {
+                font-size: 23px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: $mainColor;
+            }
+            p {
+                font-size: 15px;
+                line-height: 28px;
+            }
+            i {
+                float: right;
+                width: 5%;
+                margin-top: 7px;
+                margin-left: 1%;
+                color: $mainColor;
+                @media #{$mediaLarge} {
+                    width: 10%;
+                }
+            }
+            span {
+                float: right;
+                width: 94%;
+                display: block;
+                font-size: 15px;
+                line-height: 30px;
+                @media #{$mediaLarge} {
+                    width: 88%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* The Exhibition */
+.exhibition {
+    .exhibition-content {
+        .exhibition-text {
+            margin-top: 40px;
+            @media #{$mediaExSmall} {
+                margin-top: 60px;
+            }
+            @media #{$mediaSmall} {
+                margin-top: 60px;
+            }
+            @media #{$mediaMedium} {
+                margin-top: 60px;
+            }
+            h5 {
+                font-size: 23px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: $mainColor
+            }
+            p {
+                font-size: 15px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+/* The Media */
+.std-media {
+    .std-media-content {
+        .std-media-text {
+            margin-top: 40px;
+            @media #{$mediaExSmall} {
+                margin-top: 60px;
+            }
+            @media #{$mediaSmall} {
+                margin-top: 60px;
+            }
+            @media #{$mediaMedium} {
+                margin-top: 60px;
+            }
+            h5 {
+                font-size: 23px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                color: $mainColor
+            }
+            p {
+                font-size: 15px;
+                line-height: 28px;
+                margin-top: 20px
+            }
+            i {
+                float: right;
+                width: 5%;
+                margin-top: 7px;
+                margin-left: 1%;
+                color: $mainColor;
+                @media #{$mediaLarge} {
+                    width: 10%;
+                }
+            }
+            span {
+                float: right;
+                width: 94%;
+                display: block;
+                font-size: 15px;
+                line-height: 30px;
+                @media #{$mediaLarge} {
+                    width: 88%;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* The Our Clients */
+.our-clients {
+    .our-clients-gallary {
+        .gallary {
+            .card {
+                img {
+                    height: 130px;
+                }
+            }
+        }
+    }
+}

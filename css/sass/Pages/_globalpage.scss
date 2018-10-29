@@ -1,0 +1,493 @@
+*  {
+  @include prefixer(box-sizing, border-box, webkit moz);
+  margin: 0;
+  padding: 0
+}
+
+body {
+  @include prefixer(box-sizing, border-box, webkit moz);
+  background-color: #EEE;
+  direction: rtl;
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  font: {
+    family: 'Changa', sans-serif;
+  }
+}
+
+
+ul, ol {
+  list-style: none;
+  padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cairo',  sans-serif;
+}
+
+.active {
+  background-color: rgba($mainColor, 1.0) !important;
+}
+
+.active h6 {
+  color: $brandColor !important;
+  background-color: rgba($mainColor, 1.0) !important;
+  font-weight: 600
+}
+
+h5 {
+  @media #{$mediaExSmall} {
+    font-size: 20px !important;
+  }
+  @media #{$mediaSmall} {
+    font-size: 20px !important;
+  }
+  @media #{$mediaMedium} {
+    font-size: 21px !important;
+  }
+}
+
+p {
+  @media #{$mediaExSmall} {
+    font-size: 13px !important;
+  }
+  @media #{$mediaSmall} {
+    font-size: 13px !important;
+  }
+  @media #{$mediaMedium} {
+    font-size: 14px !important;
+  }
+}
+
+i ~ span {
+  @media #{$mediaExSmall} {
+    font-size: 11px !important;
+  }
+  @media #{$mediaSmall} {
+    font-size: 12px !important;
+  }
+  @media #{$mediaMedium} {
+    font-size: 12px !important;
+  }
+}
+
+/* Styles Global */
+/* Background Section About Our */
+.header {
+  .header-text {
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    background-color: rgba($baseColor, .8);
+    border-radius: 3px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 30px;
+    position: absolute;
+    top: 50%;
+    z-index: 99;
+    @media #{$mediaExSmall} {
+      font-size: 14px;
+      width: 80%;
+      right: 5%;
+      top: 15%;
+    }
+    @media #{$mediaSmall} {
+      font-size: 14px;
+      width: 80%;
+      right: 5%;
+      top: 20%;
+    }
+    @media #{$mediaMedium} {
+      font-size: 14px;
+      width: 80%;
+      right: 5%;
+      top: 25%;
+    }
+    h5 {
+      color: $brandColor;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      @media #{$mediaExSmall} {
+        font-size: 18px;
+      }
+      @media #{$mediaSmall} {
+        font-size: 18px;
+      }
+      @media #{$mediaMedium} {
+        font-size: 18px;
+      }
+    }
+    p {
+        font-weight: 300;
+        color: $brandColor;
+    }
+  }
+}
+
+/* The Global Box To All Sections */
+.box {
+    text-align: right;
+    margin: 80px 60px;
+    padding: 40px;
+    @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+    border-radius: 3px;
+    background-color: #FFF;
+    position: relative;
+    @media #{$mediaExSmall} {
+      margin: 40px 30px;
+      padding: 20px;
+    }
+    @media #{$mediaSmall} {
+      margin: 40px 30px;
+      padding: 20px;
+    }
+    @media #{$mediaMedium} {
+      margin: 50px 35px;
+      padding: 25px;
+    }
+}
+
+/* The Global Title To All Sections */
+.title {
+  background-color: $mainColor;
+  width: 300px;
+  @include prefixer(box-shadow, 0 0 5px 0 rgba(#000, .5), webkit moz);
+  border-radius: 1px;
+  h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: $brandColor;
+      padding: 10px 15px;
+      @media #{$mediaExSmall} {
+        font-size: 16px;
+        width: auto;
+      }
+      @media #{$mediaSmall} {
+        font-size: 16px;
+        width: auto;
+      }
+      @media #{$mediaMedium} {
+        font-size: 16px;
+        width: auto;
+      }
+  }
+}
+
+
+/* The Global Text To All Sections */
+.text {
+  p {
+      margin-top: 60px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 30px;
+      @media #{$mediaExSmall} {
+        font-size: 13px;
+      }
+      @media #{$mediaSmall} {
+        font-size: 13px;
+      }
+      @media #{$mediaMedium} {
+        font-size: 13px;
+      }
+  }
+  h5 {
+      margin: 15px 0;
+      font-weight: 600
+  }
+  i {
+      float: right;
+      width: 3%;
+      margin-top: 6px;
+      color: $mainColor;
+      @media #{$mediaExSmall} {
+        width: 8%;
+      }
+      @media #{$mediaSmall} {
+        width: 8%;
+      }
+      @media #{$mediaMedium} {
+        width: 8%;
+      }
+  }
+  span {
+      float: right;
+      width: 97%;
+      display: block;
+      font-size: 14px;
+      line-height: 30px;
+      @media #{$mediaExSmall} {
+        width: 90%;
+        font-size: 13px;
+      }
+      @media #{$mediaSmall} {
+        width: 90%;
+        font-size: 13px;
+      }
+      @media #{$mediaMedium} {
+        width: 90%;
+        font-size: 13px;
+      }
+  }
+}
+
+/* The Global Gallary To All Sections In Home Page */
+.gallary {
+  margin-top: 60px;
+  .card {
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+      img {
+          border-radius: 3px;
+          transition: .3s;
+      }
+      &:hover img {
+          transform: scale(1.1)
+      }
+      &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($baseColor, .4);
+          z-index: 99;
+      }
+  }
+}
+
+.frames,
+.stands,
+.lecterns,
+.cabients,
+.ex-display,
+.office,
+.retail {
+  position: relative;
+  top: -10pc;
+  @media #{$mediaExSmall} {
+    top: -3pc;
+  }
+  @media #{$mediaSmall} {
+    top: -5pc;
+  }
+  @media #{$mediaMedium} {
+    top: -7pc;
+  }
+  p {
+    margin-bottom: 15px;
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    @media #{$mediaExSmall} {
+      font-size: 13px;
+      line-height: 25px;
+    }
+    @media #{$mediaSmall} {
+      font-size: 13px;
+      line-height: 25px;
+    }
+    @media #{$mediaMedium} {
+      font-size: 13px;
+      line-height: 25px;
+    }
+  }
+  .text {
+    h6 {
+      color: $mainColor;
+      margin-top: 60px;
+      font-weight: 600;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 15px;
+      @media #{$mediaExSmall} {
+        font-size: 13px;
+        line-height: 25px;
+      }
+      @media #{$mediaSmall} {
+        font-size: 13px;
+        line-height: 25px;
+      }
+      @media #{$mediaMedium} {
+        font-size: 13px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+.box-gallary {
+  position: relative;
+  top: -10pc;
+  @media #{$mediaExSmall} {
+    top: -3pc;
+  }
+  @media #{$mediaSmall} {
+    top: -5pc;
+  }
+  @media #{$mediaMedium} {
+    top: -7pc;
+  }
+  .text-title {
+    margin-bottom: 35px;
+    h3 {
+      width: 300px;
+      background-color: $baseColor;
+      color: $brandColor;
+      font-size: 20px;
+      padding: 10px 15px;
+      margin: 0;
+      @media #{$mediaExSmall} {
+        font-size: 15px;
+        width: auto;
+      }
+      @media #{$mediaSmall} {
+        font-size: 15px;
+        width: auto;
+      }
+      @media #{$mediaMedium} {
+        font-size: 16px;
+        width: auto;
+      }
+    }
+    p {
+      width: 250px;
+      background-color: $mainColor;
+      color: $brandColor;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 5px 15px;
+      @media #{$mediaExSmall} {
+        font-size: 11px;
+        width: auto;
+      }
+      @media #{$mediaSmall} {
+        font-size: 11px;
+        width: auto;
+      }
+      @media #{$mediaMedium} {
+        font-size: 12px;
+        width: auto;
+      }
+      
+    }
+  }
+  .card {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px;
+      .card-img-top {
+          border-radius: 3px;
+          transition: .3s;
+          height: 300px;
+          width: 100%;
+          opacity: .8;
+      }
+      &:hover img {
+          opacity: 1;
+          transform: scale(1.1)
+      }
+      
+    .card-body {
+      height: 380px;
+      .card-title {
+        width: auto;
+        background-color: $baseColor;
+        color: $brandColor;
+        font-size: 15px;
+        padding: 10px;
+        position: relative;
+        @media #{$mediaExSmall} {
+          font-size: 11px !important;
+        }
+        @media #{$mediaSmall} {
+          font-size: 11px !important;
+        }
+        @media #{$mediaMedium} {
+          font-size: 13px !important;
+        }
+        span {
+          background-color: $mainColor;
+          position: absolute;
+          left: 0;
+          height: 100%;
+          top: 0;
+          line-height: 40px;
+          padding: 0 15px;
+          font-size: 13px;
+          @media #{$mediaExSmall} {
+            line-height: 35px;
+          }
+          @media #{$mediaSmall} {
+            line-height: 35px;
+          }
+          @media #{$mediaMedium} {
+            line-height: 35px;
+          }
+        }
+      }
+      .card-text {
+        font-size: 13px;
+        line-height: 21px;
+        @media #{$mediaExSmall} {
+          font-size: 11px !important;
+        }
+        @media #{$mediaSmall} {
+          font-size: 11px !important;
+        }
+        @media #{$mediaMedium} {
+          font-size: 11px !important;
+        }
+      }
+    }
+  }
+}
+
+/* Page Loading */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $mainColor;
+  z-index: 9999999;
+  img {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ToggleFade 1.5s linear infinite;
+  }
+}
+
+@include keyFrame(ToggleFade) {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,58 @@
+.sasec-login,
+.sasec-signup {
+    font-family: 'Tajawal', sans-serif;
+    .log-in,
+    .signup {
+        
+        .head-login,
+        .head-signup {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        form {
+            border-right: 1px solid #adadad;
+            .form-group {
+                label {
+                    font-size: 15px;
+                }
+            }
+        }
+        .btn-registered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
+    .quick-links {
+        .head-links {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        .navbar-nav {
+            span {
+                float: left;
+            }
+            li {
+                float: left;
+                a {
+                    font-size: 16px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.sasec-signup {
+    margin: 0px;
+    .signup {
+        form {
+            border: none;
+        }
+    }
+}

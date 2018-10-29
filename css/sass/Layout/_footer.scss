@@ -1,0 +1,64 @@
+/* Contact Us */
+.contact-us {
+    padding-bottom: 40px;
+    .navbar-nav {
+        display: inline-block;
+        margin-top: 30px;
+        .nav-item {
+            display: inline-block;
+            .nav-link {
+                width: 38px;
+                height: 38px;
+                background-color: $baseColor;
+                color: $brandColor;
+                margin: 0 20px;
+                font-size: 16px;
+                border-radius: 3px;
+                @media #{$mediaExSmall} {
+                    margin: 0;
+                }
+                @media #{$mediaSmall} {
+                    margin: 0;
+                }
+                @media #{$mediaMedium} {
+                    margin: 0 10px;
+                }
+                &:hover {
+                    background-color: $baseColor
+                }
+                &:hover:after {
+                    background-color: $mainColor
+                }
+            }
+            
+        }
+    }
+    .nav-links {
+        font-family: "Cairo";
+        margin-top: 80px;
+        text-align: right;
+        .links-item {
+            padding-bottom: 5px;
+            font-size: 13px;
+            a {
+                color: $baseColor;
+                text-decoration: none;
+                transition: .2s;
+                &:hover {
+                    color: $mainColor
+                }
+            }
+        }
+    }
+}
+/* Footer */
+footer {
+    background-color: $mainColor;
+    padding: 25px 0;
+    text-align: right;
+    .copyright {
+        font-size: 14px;
+        color: #fff;
+        line-height: 30px;
+    }
+}

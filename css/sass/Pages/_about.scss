@@ -1,0 +1,114 @@
+/* Wath About Us */
+.WUA {
+    background-image: url("../images/Capture.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+  &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba($baseColor, 0.3)
+  }
+  .WUA-text {
+      width: 50%;
+      height: auto;
+      background-color: rgba($baseColor, 0.8);
+      position: absolute;
+      top: 30%;
+      padding: 20px;
+      color: $brandColor;
+      z-index: 99;
+      @media #{$mediaExSmall} {
+        width: 80%;
+      }
+      @media #{$mediaSmall} {
+        width: 70%;
+      }
+      @media #{$mediaMedium} {
+        width: 60%;
+      }
+      h5 {
+          font: {
+              size: 25px;
+              wieght: 500
+          }
+          margin-bottom: 15px;
+      }
+      p {
+          line-height: 25px;
+          font: {
+              size: 15px;
+              weight: 300
+          }
+      }
+  }
+}
+
+/* About Us */
+.about-us {
+    margin-bottom: 60px;
+    .w-a-r {
+        top: -10pc;
+        padding: 40px;
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+    }
+    /* Our Services */
+    .our-services {
+        top: -8pc;
+        margin: 20px 0;
+        padding: 40px;
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+    }
+
+    /* What we have */
+    .w2-h {
+        top: -6pc;
+        margin: 20px 0;
+        padding: 40px;
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+    }
+}
+
+/* Acrylic */
+.acrylic {
+    margin-bottom: 60px;
+    .about-sasec {
+        top: -10pc;
+        padding: 40px;
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+    }
+    /* About Acrylic */
+    .about-acrylic {
+        top: -8pc;
+        margin: 20px 0;
+        padding: 40px;
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+    }
+}

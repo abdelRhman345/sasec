@@ -1,5 +1,6 @@
 body {
   direction: ltr !important;
+  text-align: left !important;
   font-family: 'Tajawal', sans-serif; }
 
 h1,
@@ -25,7 +26,10 @@ a {
   .upper-bar .icon-search .icon i {
     margin: 0 3px; }
 .upper-bar .name-search {
-  left: -15px; }
+  right: 0;
+  left: 0; }
+  .upper-bar .name-search .btn-search {
+    padding-left: 0; }
   .upper-bar .name-search .button-search {
     text-align: left; }
     .upper-bar .name-search .button-search:hover {
@@ -34,6 +38,9 @@ a {
 /* Navigatio Bar */
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: 14px; }
+.navbar .navbar-collapse .icon-close {
+  right: -10px;
+  left: auto; }
 .navbar .navbar-brand {
   position: absolute;
   top: 0px;
@@ -44,6 +51,10 @@ a {
   text-align: left !important;
   left: 10% !important;
   transform: translate(0, 0); }
+
+/* Gloabl */
+.box {
+  text-align: left; }
 
 /* Our App */
 .our-apps .apps-content .apps-text .spec-app i {
@@ -77,5 +88,62 @@ a {
 .box-gallary .card .card-body .card-title span {
   right: 0;
   left: auto; }
+
+/* Footer */
+.contact-us .nav-links {
+  text-align: left; }
+
+.sasec-login,
+.sasec-signup {
+  font-family: 'Tajawal', sans-serif; }
+  .sasec-login .log-in .head-login h2,
+  .sasec-login .log-in .head-signup h2,
+  .sasec-login .signup .head-login h2,
+  .sasec-login .signup .head-signup h2,
+  .sasec-signup .log-in .head-login h2,
+  .sasec-signup .log-in .head-signup h2,
+  .sasec-signup .signup .head-login h2,
+  .sasec-signup .signup .head-signup h2 {
+    font-size: 20px; }
+  .sasec-login .log-in form,
+  .sasec-login .signup form,
+  .sasec-signup .log-in form,
+  .sasec-signup .signup form {
+    border-right: 1px solid #adadad; }
+    .sasec-login .log-in form .form-group label,
+    .sasec-login .signup form .form-group label,
+    .sasec-signup .log-in form .form-group label,
+    .sasec-signup .signup form .form-group label {
+      font-size: 15px; }
+  .sasec-login .log-in .btn-registered,
+  .sasec-login .signup .btn-registered,
+  .sasec-signup .log-in .btn-registered,
+  .sasec-signup .signup .btn-registered {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sasec-login .log-in .btn-registered h3,
+    .sasec-login .signup .btn-registered h3,
+    .sasec-signup .log-in .btn-registered h3,
+    .sasec-signup .signup .btn-registered h3 {
+      font-size: 25px; }
+  .sasec-login .quick-links .head-links h2,
+  .sasec-signup .quick-links .head-links h2 {
+    font-size: 20px; }
+  .sasec-login .quick-links .navbar-nav span,
+  .sasec-signup .quick-links .navbar-nav span {
+    float: left; }
+  .sasec-login .quick-links .navbar-nav li,
+  .sasec-signup .quick-links .navbar-nav li {
+    float: left; }
+    .sasec-login .quick-links .navbar-nav li a,
+    .sasec-signup .quick-links .navbar-nav li a {
+      font-size: 16px;
+      margin: 0; }
+
+.sasec-signup {
+  margin: 0px; }
+  .sasec-signup .signup form {
+    border: none; }
 
 /*# sourceMappingURL=styles-en.css.map */

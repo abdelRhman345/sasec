@@ -1,0 +1,397 @@
+/* Upper Bar */
+.upper-bar {
+    width: 100%;
+    height: 40px;
+    background-color: $baseColor;
+    text-align: left;
+    .navbar-nav {
+        display: inline-block;
+        .nav-item {
+            display: inline-block;
+            width: 111px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 40px;
+            .nav-link {
+                padding: 0;
+                transition: .3s;
+                color: $brandColor;
+                &:hover {
+                    padding-left: 5px;
+                }
+            }
+        }
+        .dropdown {
+            .dropdown-menu {
+                background-color: transparent;
+                border: none;
+                text-align: center;
+                .dropdown-item {
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding: 0;
+                    width: 80px;
+                    height: auto;
+                    transition: .3s;
+                    background-color: #fff;
+                    @include prefixer(box-shadow, 0 0 5px 1px rgba($baseColor, .1), webkit moz);
+                    &:hover {
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .icon-search {
+        height: 100%;
+        .icon {
+            font-size: 14px;
+            line-height: 40px;
+            color: $brandColor;
+            text-align: center;
+            cursor: pointer;
+            transition: .3s;
+            width: 90px;
+            i {
+                margin: 0 5px;
+            }
+        }
+    }
+    .name-search {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 10px;
+        padding: 20px;
+        background-color: #fff;
+        width: 100%;
+        height: auto;
+        @include prefixer(box-shadow, 0 0 5px 1px rgba($baseColor, .4), webkit moz);
+        border-radius: 1px;
+        z-index: 999999;
+        .form-search {
+            border-radius: 1px;
+            padding: 10px;
+            outline: 0;
+            &:focus {
+                color: $baseColor;
+                border-color: $mainColor;
+                @include prefixer(box-shadow, 0 0 0 .2rem rgba($mainColor, .25), webkit moz);
+            }
+        }
+        .button-search {
+            border-radius: 1px;
+            outline: 0;
+            background-color: $mainColor;
+            border: 1px solid $mainColor;
+            color: $brandColor;
+            cursor: pointer;
+            transition: .3s;
+            &:focus {
+                @include prefixer(box-shadow, 0 0 0 .2rem rgba($baseColor, .25), webkit moz);
+            }
+            &:hover {
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+/* Navigatio Bar */
+.navbar {
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
+    z-index: 99999;
+    transition: .1s;
+    @include prefixer(box-shadow, 0 0 5px 0 $baseColor, webkit moz);
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+        width: 196px;
+        height: 64px;
+        @media #{$mediaExSmall} {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+        @media #{$mediaSmall} {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+        @media #{$mediaMedium} {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+        }
+    }
+    .navbar-toggler {
+        @media #{$mediaExSmall} {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        @media #{$mediaSmall} {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        @media #{$mediaMedium} {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    }
+    .navbar-collapse {
+        .icon-close {
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            width: 40px;
+            height: 40px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        @media #{$mediaExSmall} {
+            @include prefixer(box-shadow, 0 0 2px 0 $baseColor, webkit moz);
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            right: -82%;
+            height: 100vh;
+            width: 80%;
+            background-color: #fff;
+            color: $baseColor;
+            z-index: 9999;
+            display: block !important;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        @media #{$mediaSmall} {
+            @include prefixer(box-shadow, 0 0 2px 0 $baseColor, webkit moz);
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            right: -82%;
+            height: 100vh;
+            width: 80%;
+            background-color: #fff;
+            color: $baseColor;
+            z-index: 9999;
+            display: block !important;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        @media #{$mediaMedium} {
+            @include prefixer(box-shadow, 0 0 2px 0 $baseColor, webkit moz);
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            right: -82%;
+            height: 100vh;
+            width: 80%;
+            background-color: #fff;
+            color: $baseColor;
+            z-index: 9999;
+            display: block !important;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+    }
+    .navbar-nav {
+        @media #{$mediaExSmall} {
+            margin-top: 13px;
+        }
+        @media #{$mediaSmall} {
+            margin-top: 13px;
+        }
+        @media #{$mediaMedium} {
+            margin-top: 13px;
+        }
+        .nav-item {
+            .nav-link {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 5px 25px;
+                border-radius: 3px;
+                transition: .3s;
+                &:hover {
+                    color: $brandColor;
+                    background-color: $mainColor;
+                }
+                @media #{$mediaExSmall} {
+                    font-size: 13px;
+                    padding: 10px 30px;
+                }
+                @media #{$mediaSmall} {
+                    font-size: 13px;
+                    padding: 10px 30px;
+                }
+                @media #{$mediaMedium} {
+                    font-size: 14px;
+                    padding: 10px 30px;
+                }
+                @media #{$mediaLarge} {
+                    font-size: 15px;
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+    .upper {
+        .form-search {
+            margin: 0 20px;
+            border-radius: 1px;
+            padding: 10px;
+            outline: 0;
+            &:focus {
+                color: $baseColor;
+                border-color: $mainColor;
+                @include prefixer(box-shadow, 0 0 0 .2rem rgba($mainColor, .25), webkit moz);
+            }
+        }
+        .button-search {
+            border-radius: 1px;
+            outline: 0;
+            background-color: $mainColor;
+            border: 1px solid $mainColor;
+            color: $brandColor;
+            cursor: pointer;
+            transition: .3s;
+            &:focus {
+                @include prefixer(box-shadow, 0 0 0 .2rem rgba($baseColor, .25), webkit moz);
+            }
+            &:hover {
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+/* Carousel */
+.carousel-overlay {
+    .carousel {
+        position: relative;
+        .carousel-indicators {
+            bottom: 10%;
+            z-index: 9999;
+            li {
+                width: 70px;
+                height: 35px;
+                border-radius: 3px;
+                text-indent: 0;
+                width: auto;
+                h6 {
+                    color: $baseColor;
+                    padding: 0 10px;
+                    background-color: rgba($brandColor, .7);
+                    width: 100%;
+                    height: 100%;
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 35px;
+                    text-align: center;
+                }
+            }
+        }
+        .carousel-inner {
+            height: 100%;
+            width: 100%;
+            z-index: 99;
+            padding-top: 0;
+            .carousel-item {
+                img {
+                    height: 100%;
+                }
+                .carousel-caption {
+                    width: 50%;
+                    text-align: right;
+                    top: 10% !important;
+                    right: 10%;
+                    z-index: 99;
+                    margin-top: 10%;
+                    @media #{$mediaExSmall} {
+                        width: 80%;
+                    }
+                    @media #{$mediaSmall} {
+                        width: 70%;
+                    }
+                    @media #{$mediaMedium} {
+                        width: 60%;
+                    }
+                    .carousel-text {
+                        padding: 20px;
+                        width: 100%;
+                        height: auto;
+                        background-color: rgba($baseColor, .8);
+                        border-radius: 3px;
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        line-height: 30px;
+                        @media #{$mediaExSmall} {
+                            font-size: 13px;
+                            line-height: 25px;
+                        }
+                        @media #{$mediaSmall} {
+                            font-size: 14px;
+                            line-height: 25px;
+                        }
+                        @media #{$mediaMedium} {
+                            font-size: 15px;
+                            line-height: 30px;
+                        }
+                        h5 {
+                            font-size: 25px;
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                            @media #{$mediaExSmall} {
+                                font-size: 20px;
+                                line-height: 25px;
+                            }
+                            @media #{$mediaSmall} {
+                                font-size: 22px;
+                                line-height: 25px;
+                            }
+                            @media #{$mediaMedium} {
+                                font-size: 23px;
+                                line-height: 30px;
+                            }
+                        }
+                        p {
+                            font-weight: 300
+                        }
+                    }
+                    a {
+                        border-radius: 3px;
+                        font-size: 20px;
+                        @media #{$mediaExSmall} {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                        @media #{$mediaSmall} {
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                        @media #{$mediaMedium} {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+            z-index: 9999;
+            top: 50%
+        }
+    }
+}

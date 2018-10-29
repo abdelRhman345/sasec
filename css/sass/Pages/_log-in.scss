@@ -1,0 +1,223 @@
+.navbar {
+    .nav-bar {
+        display: flex;
+        margin-top: 13px;
+        .nav-item {
+            .nav-link {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 5px 25px;
+                border-radius: 3px;
+                transition: .3s;
+                color: $baseColor;
+                &:hover {
+                    color: $brandColor;
+                    background-color: $mainColor;
+                }
+                @media #{$mediaExSmall} {
+                    font-size: 13px;
+                    padding: 10px 30px;
+                }
+                @media #{$mediaSmall} {
+                    font-size: 13px;
+                    padding: 10px 30px;
+                }
+                @media #{$mediaMedium} {
+                    font-size: 14px;
+                    padding: 10px 30px;
+                }
+                @media #{$mediaLarge} {
+                    font-size: 15px;
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+}
+
+/* Sasec Log In */
+.sasec-login,
+.sasec-signup {
+    margin: 80px 0px;
+    margin-bottom: 0;
+    padding: 40px;
+    .log-in,
+    .signup {
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+        padding: 0 15px;
+        .head-login,
+        .head-signup {
+            padding: 10px 15px;
+            width: 100%;
+            background-color: $mainColor;
+            border-bottom: 2px solid #444344;
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+                color: $brandColor;
+                margin: 0;
+            }
+        }
+        form {
+            padding: 10px 40px;
+            margin: 20px 0;
+            border-left: 1px solid #adadad;
+            .form-group {
+                label {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+                input {
+                    border-radius: 1px;
+                    font-size: 13px;
+                    &:focus {
+                        border-color: $mainColor;
+                        box-shadow: 0 0 0 0.2rem rgba($mainColor, .3);
+                    }
+                }
+                .button {
+                    border-radius: 3px;
+                    width: 30%;
+                    background-color: $mainColor;
+                    color: $brandColor;
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+            }
+        }
+        .btn-registered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            a {
+                border-radius: 3px;
+                background-color: $mainColor;
+                color: $brandColor;
+                cursor: pointer;
+                font-weight: 600;
+                &:focus {
+                    border-color: $mainColor;
+                    box-shadow: 0 0 0 0.2rem rgba($mainColor, .3);
+                }
+            }
+            @media #{$mediaExSmall} {
+                margin-bottom: 50px;
+            }
+            @media #{$mediaSmall} {
+                margin-bottom: 40px;
+            }
+            @media #{$mediaMedium} {
+                margin-bottom: 30px;
+            }
+        }
+        @media #{$mediaExSmall} {
+            margin-bottom: 80px;
+        }
+        @media #{$mediaSmall} {
+            margin-bottom: 70px;
+        }
+        @media #{$mediaMedium} {
+            margin-bottom: 60px;
+        }
+    }
+    .quick-links {
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+        .head-links {
+            padding: 10px 15px;
+            width: 100%;
+            background-color: $mainColor;
+            border-bottom: 2px solid #444344;
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+                color: $brandColor;
+                margin: 0;
+            }
+        }
+        .navbar-nav {
+            padding: 14px 15px;
+            span {
+                float: right;
+                width: 10%;
+                margin-top: 10px;
+                color: $mainColor
+            }
+            li {
+                width: 88%;
+                float: right;
+                a {
+                    color: $baseColor;
+                    font-size: 13px;
+                    font-weight: bold;
+                    margin: 2px 0;
+                }
+            }
+        }
+    }
+}
+
+.sasec-signup {
+    margin: 0px;
+    .signup {
+        form {
+            border: none;
+        }
+    }
+}
+/* Conatct Us */
+.contact-us {
+    padding: 0 55px;
+    margin-bottom: 60px;
+    .sasec-contact {
+        @include prefixer(box-shadow, 0 0 5px rgba($baseColor, .25), webkit moz);
+        border-radius: 3px;
+        background-color: #FFF;
+        position: relative;
+        .head-footer {
+            padding: 10px 15px;
+            width: 100%;
+            background-color: $mainColor;
+            border-bottom: 2px solid #444344;
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+                color: $brandColor;
+                margin: 0;
+            }
+        }
+        .navbar-nav {
+            margin: 30px 0;
+            padding: 0 15px;
+            h4 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            li {
+                a {
+                    text-align: center;
+                    margin: 0 8px !important;
+                    @media #{$mediaExSmall} {
+                        margin: 0 !important;
+                        margin-bottom: 10px !important
+                    }
+                    @media #{$mediaSmall} {
+                        margin: 0 !important;
+                        margin-bottom: 10px !important
+                    }
+                }
+            }
+        }
+    }
+}
